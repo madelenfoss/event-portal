@@ -1,5 +1,5 @@
-import fetchArtist from "./modules/fetchArtist";
+import fetchEvents from "./modules/fetchEvents";
 
-fetchArtist();
+fetchEvents();
 
 // async og await går hånd i hånd
