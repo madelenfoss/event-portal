@@ -1,1 +1,3 @@
 @import './variables.css';
+@import './modules/header.css';
+@import './base.css';
