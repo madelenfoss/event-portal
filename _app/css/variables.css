@@ -1,8 +1,23 @@
 :root {
+	/* Color variables */
 	--primary: #F0B4DC;
 	--secondary:#046D1B;
 	--tertiary:#000;
 	--quaternary:#fff;
 	--quinary:#9B387A;
 	--senary:#FFD7F2;
+
+	/* Large text desktop */
+	--large-font-size:;
+
+	/* Large text mobile */
+	--large-mob-font-size:;
+
+	/* Body text */
+	--body-font-size:;
+
+	/* Small text */
+	--small-font-size:;
+
+	/* FINNE FONTS google*/
 }
