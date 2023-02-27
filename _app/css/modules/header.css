@@ -1,27 +1,44 @@
-nav {
-	display: block;
-	margin: 1.5rem;
+header {
+	display: flex;
+	justify-content: center;
+	margin: 1.5rem auto;
+	width: 96%;
 	height: 360px;
 	background-color: var(--secondary);
+	box-shadow: 0 8px 10px rgba(155, 56, 122, 0.5);
 }
 
-.nav__h1 {
+.navbar__h1 {
 	display: block;
 	padding: 5rem;
 	text-align: center;
 	color: var(--quaternary);
 	font-family: 'IBM Plex Sans Condensed'; /* Finne font fam, lage variabler*/
-
 }
 
-.nav__ul {
+.navbar__links {
+	display: flex;
+	width: 100vw;
+	justify-content: space-between;
+	padding: 5rem;
+}
+
+.navbar__ul {
 	display: flex;
 	flex-direction: row;
 	list-style: none;
-	width: 100%;
-	justify-content: space-around;	
+	color: var(--quaternary);
+	width: 8rem;
+	justify-content: space-between;
+}
+
+.navbar__ul a {
+	text-decoration: none;
 	color: var(--quaternary);
 }
+
+
+
 
 
 
