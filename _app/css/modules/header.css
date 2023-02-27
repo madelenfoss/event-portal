@@ -10,17 +10,19 @@ header {
 
 .navbar__h1 {
 	display: block;
-	padding: 5rem;
+	padding: 6rem;
 	text-align: center;
 	color: var(--quaternary);
 	font-family: 'IBM Plex Sans Condensed'; /* Finne font fam, lage variabler*/
+	font-size: 3.5rem;
 }
 
 .navbar__links {
 	display: flex;
 	width: 100vw;
 	justify-content: space-between;
-	padding: 5rem;
+	margin-left: 2.5rem;
+	padding: 3rem;
 }
 
 .navbar__ul {
@@ -37,6 +39,9 @@ header {
 	color: var(--quaternary);
 }
 
+.navbar__search {
+	margin-right: 2.5rem;
+}
 
 
 
