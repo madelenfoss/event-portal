@@ -1,7 +1,8 @@
 :root {
 	/* Color variables */
 	--primary: #F0B4DC;
-	--secondary:#046D1B;
+	/* --secondary:#046D1B; */
+	--secondary:#00652d;
 	--tertiary:#000;
 	--quaternary:#fff;
 	--quinary:#9B387A;
