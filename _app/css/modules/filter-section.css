@@ -3,7 +3,24 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem auto;
 	position: sticky;
+	width: 100wv;
+
 }
 
+.filter-buttons__labels {
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	cursor: pointer;
+}
+
+.filter-buttons__btn {
+	margin: 0.5rem 2rem;
+	padding: 1rem 3rem;
+	background-color: var(--primary);
+	border-radius: 3rem;
+	border: 1.5px solid var(--tertiary);
+	box-shadow: 6px 4px rgb(4, 109, 27);
+}
