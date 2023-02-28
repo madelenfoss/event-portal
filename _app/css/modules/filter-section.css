@@ -1,12 +1,14 @@
 .filter-buttons {
 	display: flex;
 	flex-direction: row;
-	margin: 3rem 1rem 2rem 1rem;
+	margin: 1rem;
 	justify-content: center;
 	align-items: center;
 	position: sticky;
-	top: 0;
+	top: 1rem;
 	z-index: 20;
+	background-color: var(--primary);
+	height: 6rem;
 }
 
 .filter-buttons__sort {
