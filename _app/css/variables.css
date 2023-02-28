@@ -8,7 +8,9 @@
 	--senary:#FFD7F2;
 
 	/* Large text desktop */
-	--large-font-size:;
+	--large-font-size: 5.5rem;
+	--large-font-family:'Anton', sans-serif;
+	--large-letter-spacing: 0.5rem;
 
 	/* Large text mobile */
 	--large-mob-font-size:;

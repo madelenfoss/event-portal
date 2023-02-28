@@ -17,19 +17,32 @@ header {
 
 .navbar__h1 {
 	display: block;
-	padding: 6rem;
+	padding: 4rem 1rem 2rem 1rem;
 	text-align: center;
 	color: var(--quaternary);
-	font-family: 'IBM Plex Sans Condensed'; /* Finne font fam, lage variabler*/
-	font-size: 3.5rem;
+	font-size: var(--large-font-size);
+	font-family: var(--large-font-family);
+	letter-spacing: var(--large-letter-spacing);
+	text-shadow: 4px 4px var(--tertiary);
+}
+
+.navbar__h3 {
+	display: block;
+	width: 90vw;
+	text-align: center;
+	color: var(--quaternary);
+	text-transform: uppercase;
+	margin: 0 auto;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 .navbar__links {
 	display: flex;
+	margin: 0 auto;
 	width: 100vw;
 	justify-content: space-between;
-	margin-left: 2.5rem;
 	padding: 3rem;
+	font-family: 'Comfortaa', sans-serif;
 }
 
 .navbar__ul {
@@ -37,17 +50,17 @@ header {
 	flex-direction: row;
 	list-style: none;
 	color: var(--quaternary);
-	width: 10rem;
+	width: 14rem;
 	justify-content: space-between;
 }
 
 .navbar__ul a {
 	text-decoration: none;
 	color: var(--quaternary);
+
 }
 
 .navbar__search {
-	margin-right: 2.5rem;
 }
 
 
