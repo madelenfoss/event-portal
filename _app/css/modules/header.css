@@ -3,7 +3,7 @@ header {
 	justify-content: center;
 	margin: 1rem auto;
 	width: 97%;
-	height: 360px;
+	height: 350px;
 	background-color: var(--secondary);
 	box-shadow: 0 8px 10px rgba(155, 56, 122, 0.5);
 	
@@ -17,7 +17,7 @@ header {
 
 .navbar__h1 {
 	display: block;
-	padding: 4rem 1rem 2rem 1rem;
+	padding: 4rem 1rem 1rem 1rem;
 	text-align: center;
 	color: var(--quaternary);
 	font-size: var(--large-font-size);
@@ -33,11 +33,11 @@ header {
 	color: var(--quaternary);
 	text-transform: uppercase;
 	margin: 0 auto;
-	font-family: 'Comfortaa', sans-serif;
 }
 
 .navbar__h3 em {
-	color: yellow;
+	color: var(--primary);
+	text-shadow: 0 1px var(--tertiary);
 }
 
 .navbar__links {
@@ -46,7 +46,6 @@ header {
 	width: 100vw;
 	justify-content: space-between;
 	padding: 3rem;
-	font-family: 'Comfortaa', sans-serif;
 }
 
 .navbar__ul {
@@ -61,7 +60,7 @@ header {
 .navbar__ul a {
 	text-decoration: none;
 	color: var(--quaternary);
-
+	text-shadow: 0 2px var(--tertiary);
 }
 
 .navbar__search {
