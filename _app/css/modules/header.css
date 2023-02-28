@@ -36,6 +36,10 @@ header {
 	font-family: 'Comfortaa', sans-serif;
 }
 
+.navbar__h3 em {
+	color: yellow;
+}
+
 .navbar__links {
 	display: flex;
 	margin: 0 auto;
