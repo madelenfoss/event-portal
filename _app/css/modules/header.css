@@ -9,11 +9,11 @@ header {
 	
 }
 
-.header__sticky {
+/* .header__sticky {
 	position: sticky;
 	top: 1.5rem;
 	z-index: 30;
-}
+} */
 
 .navbar__h1 {
 	display: block;
