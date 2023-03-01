@@ -41,3 +41,9 @@
 	background-color: var(--senary);
 	transition: 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 768px) {
+	.filter-buttons {
+		display: none;
+	}
+}
