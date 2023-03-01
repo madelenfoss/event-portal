@@ -32,14 +32,19 @@
 	background-color: var(--primary);
 	border-radius: 3rem;
 	border: 1.5px solid var(--tertiary);
-	box-shadow: 6px 4px rgb(4, 109, 27);
+	box-shadow: 6px 4px var(--secondary);
 	cursor: pointer;
 	font-size: 1rem;
 }
 
 .filter-buttons__btn:hover {
-	background-color: var(--senary);
-	transition: 0.3s ease-in-out;
+	background: var(--senary);
+	transition: ease-in-out 0.3s;
+	box-shadow: 5px 3px var(--secondary);
+}
+
+.filter-buttons__btn:active {
+	box-shadow: 1px 1px var(--secondary);
 }
 
 .filter-buttons-mobile {
