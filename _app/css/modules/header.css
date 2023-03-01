@@ -43,6 +43,19 @@ header {
 	padding: 2rem 4rem;
 }
 
+.navbar__links-mob {
+	display: none;
+}
+
+.navbar__links-mob a {
+	text-decoration: none;
+	color: var(--quaternary);
+}
+
+.navbar__links-mob ul {
+	list-style: none;
+}
+
 .navbar__ul {
 	display: flex;
 	list-style: none;
@@ -63,4 +76,12 @@ header {
 }
 
 
+@media screen and (max-width: 768px) {
+	.navbar__links {
+		display: none;
+	}
 
+	.navbar__links-mob {
+		display: block;
+	}
+}
