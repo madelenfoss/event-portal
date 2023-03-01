@@ -10,11 +10,16 @@ header {
 .navbar__h1 {
 	padding: 3rem 1rem 1rem 1rem;
 	text-align: center;
-	color: var(--quaternary);
 	font-size: var(--large-font-size);
 	font-family: var(--large-font-family);
 	letter-spacing: var(--large-letter-spacing);
 	text-shadow: 4px 4px var(--tertiary);
+}
+
+.navbar__h1 a {
+	text-decoration: none;
+	color: var(--quaternary);
+	cursor: pointer;
 }
 
 .navbar__h3 {
