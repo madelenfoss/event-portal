@@ -42,8 +42,22 @@
 	transition: 0.3s ease-in-out;
 }
 
+.filter-buttons-mobile {
+	display: none;
+}
+
 @media screen and (max-width: 768px) {
 	.filter-buttons {
 		display: none;
+	}
+
+	.filter-buttons-mobile {
+		display: block;
+		margin: 2rem;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		border: 2px solid var(--secondary);
+		border-radius: 1rem;
+		box-shadow: 0 1px 4px rgba(155, 56, 122, 0.5);
 	}
 }
