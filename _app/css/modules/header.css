@@ -3,7 +3,6 @@ header {
 	justify-content: center;
 	margin: 1rem auto;
 	width: 97%;
-	height: 350px;
 	background-color: var(--secondary);
 	box-shadow: 0 8px 10px rgba(155, 56, 122, 0.5);
 	
@@ -17,7 +16,7 @@ header {
 
 .navbar__h1 {
 	display: block;
-	padding: 4rem 1rem 1rem 1rem;
+	padding: 3rem 1rem 1rem 1rem;
 	text-align: center;
 	color: var(--quaternary);
 	font-size: var(--large-font-size);
@@ -32,7 +31,7 @@ header {
 	text-align: center;
 	color: var(--quaternary);
 	text-transform: uppercase;
-	margin: 0 auto;
+	margin: 0 auto 2rem auto;
 }
 
 .navbar__h3 em {
@@ -45,7 +44,7 @@ header {
 	margin: 0 auto;
 	width: 100vw;
 	justify-content: space-between;
-	padding: 3rem;
+	padding: 2rem 4rem;
 }
 
 .navbar__ul {
@@ -64,11 +63,14 @@ header {
 }
 
 .navbar__search {
+	text-decoration: none;
 }
 
 
 
-
+@media screen and (min-width: 992px) and (max-width: 1382px) {
+	
+}
 
 
 
