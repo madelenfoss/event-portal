@@ -4,15 +4,8 @@ header {
 	margin: 1rem auto;
 	width: 97%;
 	background-color: var(--secondary);
-	box-shadow: 0 8px 10px rgba(155, 56, 122, 0.5);
-	
+	box-shadow: 0 8px 10px rgba(155, 56, 122, 0.5);	
 }
-
-/* .header__sticky {
-	position: sticky;
-	top: 1.5rem;
-	z-index: 30;
-} */
 
 .navbar__h1 {
 	display: block;
