@@ -4,23 +4,31 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Event Portal</title>
+
 		<link rel="stylesheet" href="./_app/css/main.css">
 		<script type="module" src="./_app/js/main.js"></script>
 	</head>
+
 	<body>
 		<header>
 			<nav>
-				<h1 class="navbar__h1"><a href="./index.html">BERLINFO</a></h1>
-				<h3 class="navbar__h3">Find out what's going on in Berlin right <em>HERE</em>, right <em>NOW</em>!</h3>
-				<div class="navbar__links">
-					<ul class="navbar__ul">
+				<h1 class="navbar__h1">
+					<a href="./index.html">BERLINFO</a>
+				</h1>
+				<h3 class="navbar__h3">
+					Find out what's going on in Berlin right <em>HERE</em>, right <em>NOW</em>!
+				</h3>
+
+				<section class="navbar__links">
+					<menu class="navbar__ul">
 						<li class="navbar__ul-li">
 							<a href="#">About us</a>
 						</li>
 						<li class="navbar__ul-li">
 							<a href="#">Get in touch</a>
 						</li>
-					</ul>
+					</menu>
+
 					<div class="navbar__search">
 						<form action="">
 							<input 
@@ -32,24 +40,25 @@
 							<button>Search</button> <!-- svg search icon? -->
 						</form>
 					</div>
-				</div>
-				<div class="navbar__links-mob">
-					<ul class="navbar__links-mob-menu">
+				</section>
+
+				<section class="navbar__links-mob">
+					<menu class="navbar__links-mob-menu">
 						<li class="navbar__links-mob-menu-item">
 							<a href="./about-us/">About Us</a>
 						</li>
 						<li class="navbar__links-mob-menu-item">
 							<a href="./get-in-touch/">Get In Touch</a>
 						</li>
-					</ul>
+					</menu>
 					<button class="navbar__links-close">
 						<img src="" alt="Close Menu"> <!-- Finne svg icon for close -->
 					</button>
-				</div>
+				</section>
 			</nav>
 		</header>
-		<main>
 
+		<main>
 			<section class="filter-buttons">
 				<div class="filter-buttons__sort">Sort events by:</div>
 				<div class="filter-buttons__labels">
