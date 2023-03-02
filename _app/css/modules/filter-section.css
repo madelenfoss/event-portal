@@ -1,12 +1,14 @@
 .filter-buttons {
 	display: flex;
 	flex-direction: row;
-	margin: 1rem;
-	padding: 1.5rem;
+	margin: 1rem auto 2rem auto;
+	padding-top: 1rem;
+	padding-bottom: 0.3rem;
+	box-shadow: 0 1.6rem 2rem var(--primary);
 	justify-content: center;
 	align-items: center;
 	position: sticky;
-	top: 1rem;
+	top: 0;
 	z-index: 20;
 	background-color: var(--primary);
 }
