@@ -14,7 +14,7 @@
 }
 
 .filter-buttons__sort {
-	margin: 1rem;
+	margin: 1.5rem;
 	text-align: center;
 	white-space: nowrap;
 	
@@ -49,8 +49,39 @@
 	box-shadow: 1px 1px var(--secondary);
 }
 
-.filter-buttons-mobile {
+.filter-buttons-mobile__sort {
+	margin: 0 auto;
+	padding: 0.5rem;
+	cursor: pointer;
+	border: 2px solid var(--secondary);
 	display: none;
+
+}
+
+.filter-buttons-mobile__labels {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid var(--secondary);
+	border-top: none;
+	display: none;
+}
+
+.filter-buttons-mobile__btn {
+	display: none; 
+	background-color: var(--primary);
+	padding: 1rem;
+	cursor: pointer;
+	width: 100%;
+	border: 1px solid var(--primary);
+}
+
+.filter-buttons-mobile__btn:not(:last-of-type) {
+	border-bottom: 1px solid var(--secondary);
+}
+
+.filter-buttons-mobile__btn:active {
+	background-color: var(--senary);
 }
 
 @media screen and (max-width: 768px) {
@@ -58,11 +89,16 @@
 		display: none;
 	}
 
+	.filter-buttons-mobile__sort,
+	.filter-buttons-mobile__labels,
+	.filter-buttons-mobile__btn {
+		display: block;
+	}
+
 	.filter-buttons-mobile {
 		display: block;
 		margin: 2rem;
 		padding: 0.5rem 1rem;
 		text-align: center;
-		border: 2px solid var(--secondary);
 	}
 }

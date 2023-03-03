@@ -53,7 +53,7 @@ header {
 	color: var(--quaternary);
 }
 
-.navbar__links-mob ul {
+.navbar__links-mob-menu {
 	list-style: none;
 }
 
