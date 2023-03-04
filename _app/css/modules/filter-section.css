@@ -57,18 +57,16 @@
 	border: 2px solid var(--secondary);
 	background-color: var(--primary);
 	display: none;
-
-
 }
 
 .filter-buttons-mobile__labels {
-	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	border: 2px solid var(--secondary);
 	border-top: none;
 	display: none;
 }
+
+
 
 .filter-buttons-mobile__btn {
 	display: none; 
@@ -97,6 +95,11 @@
 	.filter-buttons-mobile__btn {
 		display: block;
 	}
+
+	.filter-buttons-mobile__labels--visible {
+		display: block;
+	}
+	
 
 	.filter-buttons-mobile {
 		display: block;
