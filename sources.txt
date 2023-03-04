@@ -1,0 +1,5 @@
+Icons:
+https://www.svgrepo.com/
+
+Styling fetched API (crypto version):
+https://www.youtube.com/watch?v=evXtJv-nYLc
