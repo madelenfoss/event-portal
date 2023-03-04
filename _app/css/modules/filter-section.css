@@ -1,7 +1,7 @@
 .filter-buttons {
 	display: flex;
 	flex-direction: row;
-	margin: 1rem auto 0 auto;
+	margin: 0 auto;
 	padding: 1rem 0 2rem 0;
 	justify-content: center;
 	align-items: center;
