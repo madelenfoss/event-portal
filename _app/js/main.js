@@ -1,5 +1,5 @@
 import fetchEvents from "./modules/fetchEvents.js";
-import menuToggle from "./modules/mobileMenu.js";
+import menuToggle from "./modules/toggleMenu.js";
 
 fetchEvents();
 menuToggle();
