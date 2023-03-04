@@ -60,7 +60,7 @@ header {
 /* Mobile menu */
 
 .navbar__icons-mob {
-	display: flex;
+	display: none;
 	justify-content: space-between;
 	width: 96vw;
 	margin: 0 auto;
@@ -69,7 +69,6 @@ header {
 .navbar__icons-mob-hamburger {
 	background: none;
 	border: none;
-	margin: 0.5rem;
 }
 
 .navbar__icons-mob-search {
@@ -78,17 +77,17 @@ header {
 	margin: 0.5rem;
 }
 
-.navbar__links-close {
-	display: none;
-	background: none;
-	border: none;
-	margin: 2rem auto;
-}
-
 .navbar__links-mob {
 	position: relative;
 	display: none;
+
 }
+
+.navbar__links-close {
+	background: none;
+	border: none;
+}
+
 
 .navbar__links-mob a {
 	text-decoration: none;
@@ -96,6 +95,10 @@ header {
 }
 
 .navbar__links-mob-menu {
+	display: none
+}
+
+.navbar__links-mob-menu-item {
 	list-style: none;
 }
 
@@ -122,5 +125,9 @@ header {
 	
 	.hamburger {
 		display: block;
+	}
+
+	.navbar__icons-mob {
+		display: flex;
 	}
 }
