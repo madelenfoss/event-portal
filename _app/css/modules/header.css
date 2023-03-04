@@ -57,6 +57,15 @@ header {
 	text-shadow: 0 2px var(--tertiary);
 }
 
+#navbar__search-input {
+	border-radius: 1rem;
+	border: none;
+	height: 1.8rem;
+	width: 10rem;
+	text-align: center;
+}
+
+
 /* Mobile menu */
 
 .navbar__icons-mob {
