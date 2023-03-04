@@ -3,7 +3,7 @@
 	flex-direction: column;
 	width: 95vw;
 	height: 95vw; /* for testing only */
-	margin: 2rem auto;
+	margin: 1rem auto;
 	/* justify-content: center; */
 	background-color:var(--senary);
 }
@@ -25,4 +25,14 @@
 .events__name,
 .events__city {
 	margin: 1rem auto;
+}
+
+.events__tickets {
+	background-color: var(--secondary);
+	padding: 2vw 8vw;
+	color: var(--quaternary);
+	margin: 0;
+	border-radius: 10rem;
+	border: 1px solid var(--tertiary);
+	font-size: 1rem;
 }
