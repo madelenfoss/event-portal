@@ -3,7 +3,6 @@
 	flex-direction: row;
 	margin: 1rem auto 0 auto;
 	padding: 1rem 0 2rem 0;
-	/* box-shadow: 0 1.6rem 2rem var(--primary); */
 	justify-content: center;
 	align-items: center;
 	position: sticky;
@@ -57,6 +56,10 @@
 	background-color: var(--primary);
 	display: none;
 	font-size: 1rem;
+}
+
+.filter-buttons-mobile__sort:active {
+	background-color: var(--senary);
 }
 
 .filter-buttons-mobile__labels {
