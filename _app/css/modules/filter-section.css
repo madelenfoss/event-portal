@@ -8,7 +8,11 @@
 	position: sticky;
 	top: 0;
 	z-index: 20;
-	background: linear-gradient(180deg, #ffb4e6 80%, transparent);
+	background: linear-gradient(
+		180deg,
+		#ffb4e6 80%, 
+		transparent
+		);
 }
 
 .filter-buttons__sort {
