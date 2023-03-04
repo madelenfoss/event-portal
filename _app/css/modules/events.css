@@ -1,6 +1,9 @@
-.lorem-test {
+.events {
 	display: flex;
+	flex-direction: column;
+	width: 95vw;
+	height: 95vw; /* for testing only */
 	justify-content: center;
-	text-align: center;
-	margin: 2rem 6rem;
+	margin: 2rem auto;
+	background-color: black;
 }
