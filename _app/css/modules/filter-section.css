@@ -1,16 +1,15 @@
 .filter-buttons {
 	display: flex;
 	flex-direction: row;
-	margin: 1rem auto 2rem auto;
-	padding-top: 1rem;
-	padding-bottom: 0.3rem;
-	box-shadow: 0 1.6rem 2rem var(--primary);
+	margin: 1rem auto 0 auto;
+	padding: 1rem 0 2rem 0;
+	/* box-shadow: 0 1.6rem 2rem var(--primary); */
 	justify-content: center;
 	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 20;
-	background-color: var(--primary);
+	background: linear-gradient(180deg, #ffb4e6 80%, transparent);
 }
 
 .filter-buttons__sort {
