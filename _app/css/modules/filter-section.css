@@ -103,12 +103,12 @@
 	}
 
 	.filter-buttons-mobile__sort,
-	.filter-buttons-mobile__labels,
 	.filter-buttons-mobile__btn {
 		display: block;
 	}
 
-	.filter-buttons-mobile__labels--visible {
+	.filter-buttons-mobile__labels--visible,
+	/* .filter-buttons-mobile__labels */ { 
 		display: block;
 	}
 	
