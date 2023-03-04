@@ -59,15 +59,9 @@ header {
 
 /* Mobile menu */
 
-.hamburger {
-	display: none;
-}
-
-.hamburger__bar {
-	display: block;
-	width: 2rem;
-	height: 0.1rem;
-	margin: 1rem auto;
+.navbar__icons-mob {
+	display: flex;
+	justify-content: space-between;
 }
 
 .navbar__links-mob {
