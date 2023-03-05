@@ -4,6 +4,7 @@
 	width: 100vw;
 	height: 95vw; /* for testing only */
 	margin: 1rem auto;
+	margin-bottom: 2rem;
 	/* justify-content: center; */
 	background-color:var(--primary);
 }
@@ -35,5 +36,6 @@
 	border-radius: 10rem;
 	border: 1px solid var(--tertiary);
 	font-size: 1rem;
-	box-shadow: 6px 4px var(--quinary);;
+	box-shadow: 6px 4px var(--quinary);
+	cursor: pointer;
 }
