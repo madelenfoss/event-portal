@@ -3,7 +3,7 @@ footer {
 	justify-content: center;
 	margin: 1rem auto;
 	width: 97%;
-	padding: 3rem;
 	background-color: var(--secondary);
 	box-shadow: 0 -4px 10px rgba(155, 56, 122, 0.5);	
+	
 }
