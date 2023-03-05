@@ -2,7 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	height: 95vw; /* for testing only */
 	margin: 1rem auto;
 	margin-bottom: 2rem;
 	/* justify-content: center; */
