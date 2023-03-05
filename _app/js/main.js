@@ -1,8 +1,9 @@
 import fetchEvents from "./modules/fetchEvents.js";
-import menuToggle from "./modules/toggleMenu.js";
+import renderList from "./modules/renderList.js";
 
 fetchEvents();
-menuToggle();
+renderList();
+
 
 
 // async og await går hånd i hånd
