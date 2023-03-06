@@ -40,6 +40,7 @@ header {
 	margin: 0 auto;
 	width: 100vw;
 	justify-content: space-between;
+	align-items: center;
 	padding: 2rem 4rem;
 }
 
@@ -79,6 +80,7 @@ header {
 	background: none;
 	border: none;
 	cursor: pointer;
+	margin: 1rem;
 }
 
 .navbar__icons-mob-search {
@@ -86,19 +88,18 @@ header {
 	border: none;
 	margin: 0.5rem;
 	cursor: pointer;
+	margin: 1rem;
 }
 
 .navbar__links-mob {
 	position: relative;
 	display: none;
-
 }
 
 .navbar__links-close {
 	background: none;
 	border: none;
 }
-
 
 .navbar__links-mob a {
 	text-decoration: none;
@@ -130,10 +131,6 @@ header {
 	}
 
 	.navbar__links-mob {
-		display: block;
-	}
-	
-	.hamburger {
 		display: block;
 	}
 
