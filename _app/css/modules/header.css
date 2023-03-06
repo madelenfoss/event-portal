@@ -115,11 +115,6 @@ header {
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1382px) {
-	
-}
-
-
 @media screen and (max-width: 768px) {
 
 	.navbar__h1 {

@@ -1,7 +1,7 @@
 .to-top__button {
 	position: fixed;
 	right: 2.5rem;
-	bottom: 3rem;
+	bottom: 4rem;
 	background: transparent;
 	border: none;
 	filter: drop-shadow(0 4px 0 var(--quinary));
