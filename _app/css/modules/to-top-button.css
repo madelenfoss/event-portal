@@ -12,3 +12,13 @@
 	display: none;
 }
 
+@media screen and (max-width: 500px) {
+	.to-top__button {
+		right: 1.6rem;
+		bottom: 4rem;
+	}
+
+	.to-top__button img {
+		width: 2.5rem;
+	}
+}
