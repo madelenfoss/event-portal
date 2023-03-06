@@ -2,17 +2,18 @@
 	display: flex;
 	flex-direction: row;
 	margin: 0 auto;
-	padding: 1rem 0 2rem 0;
+	padding: 1rem 0 1rem 0;
 	justify-content: center;
 	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 20;
-	background: linear-gradient(
+	background-color: var(--primary);
+	/* background: linear-gradient(
 		180deg,
 		#ffb4e6 80%, 
 		transparent
-		);
+		); */
 }
 
 .filter-buttons__sort {
