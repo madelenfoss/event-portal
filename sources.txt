@@ -1,5 +1,8 @@
 Icons:
 https://www.svgrepo.com/
 
+Scroll to top button:
+https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
+
 Styling fetched API (crypto version):
 https://www.youtube.com/watch?v=evXtJv-nYLc
