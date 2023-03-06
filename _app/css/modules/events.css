@@ -111,19 +111,33 @@
 	}
 
 	.events__event {
+		display: flex;
+		flex-direction: column;
 		margin: 0;
 		padding: 0;
 	}
 
+	.events__info {
+		margin: 0.5rem;
+	}
 
 	.events__img {
-		width: 20vw;
-		height: 20vw;
+		width: 60%;
+		max-width: 10rem;
+		object-position: top;
 		box-shadow: 2px 2px 3px var(--quinary);
+		margin: 1rem auto;
+	}
+	.events__date,
+	.events__name,
+	.events__genre,
+	.events__venue {
+		margin: 0.2rem auto;
 	}
 
 	.events__tickets {
-		padding: 0.6rem 0.8rem;
+		padding: 0.8rem 3rem;
 		box-shadow: 4px 2px var(--quinary);
+		margin: 1rem auto 2rem auto;
 	}
 }
