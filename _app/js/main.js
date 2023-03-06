@@ -1,8 +1,8 @@
-import fetchEvents from "./modules/fetchEvents.js";
-import renderList from "./modules/renderList.js";
+// import fetchEvents from "./modules/fetchEvents.js";
+// import renderList from "./modules/renderList.js";
 
-fetchEvents();
-renderList();
+// fetchEvents();
+// renderList();
 
 
 
