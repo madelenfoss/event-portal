@@ -67,7 +67,8 @@
 	border-radius: 10rem;
 	border: 1px solid var(--tertiary);
 	font-size: 1rem;
-	box-shadow: 6px 4px var(--quinary);;
+	box-shadow: 6px 4px var(--quinary);
+	cursor: pointer;
 }
 
 
