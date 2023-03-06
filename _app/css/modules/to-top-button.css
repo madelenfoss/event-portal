@@ -7,3 +7,8 @@
 	filter: drop-shadow(0 4px 0 var(--quinary));
 	cursor: pointer;
 }
+
+.hidden {
+	display: none;
+}
+
