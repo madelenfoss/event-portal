@@ -119,9 +119,11 @@
 	.events__img {
 		width: 20vw;
 		height: 20vw;
+		box-shadow: 2px 2px 3px var(--quinary);
 	}
 
 	.events__tickets {
 		padding: 0.6rem 0.8rem;
+		box-shadow: 4px 2px var(--quinary);
 	}
 }
