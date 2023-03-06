@@ -1,0 +1,9 @@
+.to-top__button {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	background: transparent;
+	border: none;
+	filter: drop-shadow(0 4px 0 var(--quinary));
+	cursor: pointer;
+}
