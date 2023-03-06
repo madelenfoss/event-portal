@@ -1,10 +1,16 @@
 .footer__some {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	bottom: 0;
 	margin: 1rem auto;
 	padding: 3rem;
 	width: 97%;
 	background-color: var(--secondary);
 	box-shadow: 0 -4px 10px rgba(155, 56, 122, 0.5);
+}
+
+.footer__some-links {
+	display: flex;
+	width: 50vh;
+	justify-content: space-evenly;
 }
