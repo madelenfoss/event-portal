@@ -1,46 +1,27 @@
-export default function renderList(events) {
+export default function renderList(berlinEvents) {
 
-	const events = document.querySelector('.events');
+	const berlinEvents = document.querySelector('.events');
 
-	events.forEach(event => {
+	berlinEvents.forEach(berlinEvent => {
 		const eventElement = document.createElement('.events__event');
 		eventElement.innerHTML = `
-  			<div class="events__event">
-  				<img class=${data.events.image} src="" alt="event image">
+  				<img class="events__img" src="${data._embedded.events.image.url}" alt="event image">
   				<div class="events__info">
-  					<div class="events__date">${data.events.date}</div>
-  					<h3 class="events__name">${data.events.name}</h3>
-  					<div><span class="events__genre">${data.events.classification.segment.name}</span> - <span class="events__venue">${data.events.venue}</span></div>
+  					<div class="events__date">${data._embedded.events.date}</div>
+  					<h3 class="events__name">${data._embedded.events.name}</h3>
+  					<div><span class="events__genre">${data._embedded.events.classification.segment.name}</span> - <span class="events__venue">${data._embedded.events.venue}</span></div>
   				</div>
-  				<button class="events__tickets">${data.tickets}</button>
-	  		</div>
-		`
-	});
-}
+  				<button class="events__tickets">${data._embedded.events.tickets}</button>
+		`	
+	}); 
+	
+	//  console.log(data._embedded.events.name);
+} 
 
 
 
 
-
-
-
-
-
-	// YOUTUBE TUTORIAL
-	// events.forEach(event => {
-	// 	const eventElement = document.createElement('.events__event');
-	// 	eventElement.innerHTML += `
-	// 	<img class="events__img" src="" alt="">
-	// 	<div class="events__info">
-	// 		<div class="events__date">Date</div>
-	// 		<h3 class="events__name">Event name</h3>
-	// 		<div><span class="events__genre">Genre</span> - <span class="events__venue">Venue</span></div>
-	// 	</div>
-	// 	<button class="events__tickets">Tickets</button>
-	// 	`
-	// })
-
-	// From youtube tutorial, traditional function
+// From youtube tutorial, traditional function
 //  export default function fetchEvents() {
 // 		fetch('https://app.ticketmaster.com/discovery/v2/events?apikey=3PgslbneI8EdQweGEK0RAM0Ii9iCL3Rj&locale=*&city=Berlin&countryCode=DE').then((data) => {
 //  		return data.json();
