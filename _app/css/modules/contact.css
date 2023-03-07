@@ -1,5 +1,13 @@
 .contact {
-	margin: 2rem auto;
-	width: 96%;
+	margin: 2rem auto 8rem auto;
+	width: 80%;
 	text-align: center;
+}
+
+.contact__title {
+	margin: 1rem auto;
+}
+
+.contact__paragraph {
+	margin: 1rem auto;
 }
