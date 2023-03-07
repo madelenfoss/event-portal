@@ -16,6 +16,8 @@ header {
 	text-shadow: 4px 4px var(--tertiary);
 }
 
+
+
 .navbar__h1 a {
 	text-decoration: none;
 	color: var(--quaternary);
