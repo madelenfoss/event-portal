@@ -2,8 +2,6 @@
 	/* Color variables */
 	--primary: #ffb4e6;
 	--secondary:#046D1B; 
-	/* --secondary: rgb(60, 120, 0); */
-	/* --secondary:#16602f;  */
 	--tertiary:#000;
 	--quaternary:#fff;
 	--quinary:#9B387A;
@@ -15,13 +13,13 @@
 	--large-letter-spacing: 0.5rem;
 
 	/* Large text mobile */
-	--large-mob-font-size:;
+	--large-mob-font-size:0;
 
 	/* Body text */
-	--body-font-size:;
+	--body-font-size:0;
 
 	/* Small text */
-	--small-font-size:;
+	--small-font-size:0;
 
 	/* FINNE FONTS google*/
 }
