@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Event Portal</title>
+
+		<link rel="stylesheet" href="./_app/css/main.css">
+		<script type="module" src="./_app/js/main.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<h1 class="navbar__h1">
+					<a 
+						title="BERLINFO - Berlin Events" 
+						href="./index.html">
+						BERLINFO
+					</a>
+				</h1>
+				<h3 class="navbar__h3">
+					Find out what's going on in Berlin - right <em>HERE</em>, right <em>NOW</em>!
+				</h3>
+
+				<section class="navbar__links">
+					<menu class="navbar__menu">
+						<li class="navbar__menu-li">
+							<a href="/about-us/">About us</a>
+						</li>
+						<li class="navbar__menu-li">
+							<a href="/get-in-touch/">Get in touch</a>
+						</li>
+					</menu>
+
+					<div class="navbar__search-wrapper">
+						<form 
+							id="search" 
+							role="search">
+							<input 
+								type="search" 
+								name="search" 
+								id="navbar__search-input" 
+								placeholder="Search..."
+								aria-label="Search website">
+							<button><img >Search</img></button>  <!-- svg search icon? -->
+						</form>
+					</div> 
+				</section>
+
+				<!-- Mobile menu icons -->
+				<div class="navbar__icons-mob">
+					<button class="navbar__icons-mob-hamburger">
+						<!-- Fix width and height styling so it is in css file only -->
+						<img 
+							height="60px" 
+							width="60px" 
+							src="./_app/assets/icons/hamburger-menu-svgrepo-com.svg" 
+							alt="Hamburger menu">
+					</button>
+					<button class="navbar__icons-mob-search">
+						<!-- Fix width and height styling so it is in css file only -->
+						<img 
+							height="60px" 
+							width="60px" 
+							src="./_app/assets/icons/search-svgrepo-com.svg" 
+							alt="Search icon">
+					</button>
+				</div>
+
+				<!-- Mobile menu -->
+				<section class="navbar__links-mob">
+					<menu class="navbar__links-mob-menu">
+						<li class="navbar__links-mob-menu-item">
+							<a href="/about-us/">About Us</a>
+						</li>
+						<li class="navbar__links-mob-menu-item">
+							<a href="/get-in-touch/">Get In Touch</a>
+						</li>
+						<button class="navbar__links-close">
+							<!-- Fix width and height styling so it is in css file only -->
+							<img 
+								height="50px" 
+								width="50px" 
+								src="./_app/assets/icons/close-bold-svgrepo-com.svg" 
+								alt="Close Menu"> 
+						</button>
+					</menu>
+				</section>
+
+			</nav>
+		</header>
+
+		<main>
+			<section class="filter-buttons">
+				<div class="filter-buttons__sort">Sort events by:</div>
+				<div class="filter-buttons__labels">
+					<button 
+					class="filter-buttons__btn"
+					data-filter="All">
+					All
+					</button>
+					<button 
+						class="filter-buttons__btn"
+						data-filter="Music">
+						Music
+					</button>
+					<button 
+						class="filter-buttons__btn"
+						data-filter="Sports">
+						Sports
+					</button>
+					<button 
+						class="filter-buttons__btn"
+						data-filter="Culture">
+						Arts & Theatre
+					</button>
+					<button 
+						class="filter-buttons__btn"
+						data-filter="Humour">
+						Humour
+					</button>
+					<button 
+						class="filter-buttons__btn"
+						data-filter="Food">
+						Food
+					</button>
+				</div>
+			</section>
+
+			<!-- Mobile filter buttons -->
+			<section class="filter-buttons-mobile">
+				<button class="filter-buttons-mobile__sort">Sort events by:</button>
+				<div class="filter-buttons-mobile__labels">
+					<button 						
+						class="filter-buttons-mobile__btn"
+						data-filter="All">
+						All
+					</button>
+					<button 						
+						class="filter-buttons-mobile__btn"
+						data-filter="Music">
+						Music
+					</button>
+					<button
+						class="filter-buttons-mobile__btn"
+						data-filter="Sports">
+						Sports
+					</button>
+					<button
+						class="filter-buttons-mobile__btn"
+						data-filter="Culture">
+						Arts & Theatre
+					</button>
+					<button
+						class="filter-buttons-mobile__btn"
+						data-filter="Humour">
+						Humour
+					</button>
+					<button
+						class="filter-buttons-mobile__btn"
+						data-filter="Food">
+						Food
+					</button>
+				</div>
+			</section>
+
+			<div class="to-top__bar">
+				<button class="to-top__button hidden">
+					<img 
+						src="./_app/assets/icons/icons8-double-up-50.png" 
+						alt="Back to top">
+				</button>
+			</div>
+
+			<h1>About us</h1>
+
+
+		<footer>
+			<section class="footer__some">
+				<div class="footer__some-links">
+					<a href=""><img src="./_app/assets/icons/icons8-instagram-50.svg" alt="instagram"></a>
+					<a href=""><img src="./_app/assets/icons/icons8-facebook-50.svg" alt="facebook"></a>
+					<a href=""><img src="./_app/assets/icons/icons8-twitter-50.svg" alt="twitter"></a>
+				</div>
+			</section> 
+		</footer>
+
+	</body>
+</html>
