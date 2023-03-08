@@ -4,18 +4,21 @@
    	const response = await fetch(endpoint); 
   		const result = await response.json();
 
-		const allData = result._embedded.events.map(data => {
+		const allEvents = result._embedded.events.map(event => {
 			return {
-				image: data.image[0].url,
-				date: data.dates.start.localDate,
-				name: data.name,
-				genre: data.classifications[0].segment.name,
-				venue: data._embedded.venues[0].name,
-				tickets: data.url
+				image: event.image[0].url,
+				date: event.dates.start.localDate,
+				eventname: event.name,
+				genre: event.classifications[0].segment.name,
+				venue: event._embedded.venues[0].name,
+				tickets: event.url
 			}
 		})
-		console.log(allData);
-		console.log(result._embedded);
+
+		console.log(allEvents);
+		return allEvents;
+	
+	// console.log(result._embedded);
   	// return result._embedded;
  } 
 
