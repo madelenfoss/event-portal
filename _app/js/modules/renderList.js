@@ -4,15 +4,15 @@ export default function renderList(berlinEvents) {
 	berlinEvents.events.forEach(berlinEvent => {
 		const eventElement = document.createElement('.events__event');
 		eventElement.innerHTML = `
-  				<img class="events__img" src="${berlinEvents.events.image[0].url}" alt="event image">
+  				<img class="events__img" src="${image}" alt="event image">
   				<div class="events__info">
-  					<div class="events__date">${berlinEvents.events.date}</div>
-  					<h3 class="events__name">${berlinEvents.events.name}</h3>
-  					<div><span class="events__genre">${berlinEvents.events.classification[0].segment.name}</span>
+  					<div class="events__date">${date}</div>
+  					<h3 class="events__name">${eventname}</h3>
+  					<div><span class="events__genre">${genre}</span>
 					<span> - </span>
-					<span class="events__venue">${berlinEvents.events._embedded.venues[0]}</span></div>
+					<span class="events__venue">${venue}</span></div>
   				</div>
-  				<button class="events__tickets">${berlinEvents.events.tickets}</button>
+  				<button class="events__tickets">${tickets}</button>
 		`
 		berlinEventsElement.appendchild(eventElement);
 	})
@@ -23,13 +23,27 @@ export default function renderList(berlinEvents) {
 
 
 
+// <img class="events__img" src="${berlinEvents.events.image[0].url}" alt="event image">
+// <div class="events__info">
+// 	<div class="events__date">${berlinEvents.events.date}</div>
+// 	<h3 class="events__name">${berlinEvents.events.name}</h3>
+// 	<div><span class="events__genre">${berlinEvents.events.classification[0].segment.name}</span>
+//  <span> - </span>
+//  <span class="events__venue">${berlinEvents.events._embedded.venues[0]}</span></div>
+// </div>
+// <button class="events__tickets">${berlinEvents.events.tickets}</button>
 
+
+// const eventsImage = document.querySelector('.events__img');
+// const eventsDate = document.querySelector('.events__date');
+// const eventsName = document.querySelector('.events__name');
+// const eventsGenre = document.querySelector('.events__genre');
+// const eventsVenue = document.querySelector('.events__venue');
+// const eventsTickets = document.querySelector('.events__tickets');
 
 
 
 // Lage en function
-// Image: events.images[0] /
-// Genre: events.classifications[0] / events.classifications.segment.name
 
 
 
@@ -59,12 +73,6 @@ export default function renderList(berlinEvents) {
 // }
 
 
-// const eventsImage = document.querySelector('.events__img');
-// const eventsDate = document.querySelector('.events__date');
-// const eventsName = document.querySelector('.events__name');
-// const eventsGenre = document.querySelector('.events__genre');
-// const eventsVenue = document.querySelector('.events__venue');
-// const eventsTickets = document.querySelector('.events__tickets');
 
 
 
