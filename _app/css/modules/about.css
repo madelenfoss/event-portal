@@ -1,7 +1,9 @@
 .about {
 	margin: 2rem auto 8rem auto;
+	padding: 5rem;
 	width: 80%;
 	text-align: center;
+	border: 1px solid var(--secondary);
 }
 
 .about__title {
@@ -10,5 +12,4 @@
 
 .about__paragraph {
 	margin: 1rem auto;
-
 }
