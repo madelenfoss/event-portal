@@ -1,23 +1,35 @@
 export default function renderList(berlinEvents) {
 
-	const berlinEvents = document.querySelector('.events');
-
-	berlinEvents.forEach(berlinEvent => {
+	const berlinEventsElement = document.querySelector('.events');
+	berlinEvents.events.forEach(berlinEvent => {
 		const eventElement = document.createElement('.events__event');
 		eventElement.innerHTML = `
-  				<img class="events__img" src="${data._embedded.events.image.url}" alt="event image">
+  				<img class="events__img" src="${berlinEvents.events.image[0].url}" alt="event image">
   				<div class="events__info">
-  					<div class="events__date">${data._embedded.events.date}</div>
-  					<h3 class="events__name">${data._embedded.events.name}</h3>
-  					<div><span class="events__genre">${data._embedded.events.classification.segment.name}</span> - <span class="events__venue">${data._embedded.events.venue}</span></div>
+  					<div class="events__date">${berlinEvents.events.date}</div>
+  					<h3 class="events__name">${berlinEvents.events.name}</h3>
+  					<div><span class="events__genre">${berlinEvents.events.classification[0].segment.name}</span>
+					<span> - </span>
+					<span class="events__venue">${berlinEvents.events._embedded.venues[0]}</span></div>
   				</div>
-  				<button class="events__tickets">${data._embedded.events.tickets}</button>
-		`	
-	}); 
-	
-	//  console.log(data._embedded.events.name);
+  				<button class="events__tickets">${berlinEvents.events.tickets}</button>
+		`
+		berlinEventsElement.appendchild(eventElement);
+	})
+
+	 console.log(berlinEvents);
 } 
 
+
+
+
+
+
+
+
+// Lage en function
+// Image: events.images[0] /
+// Genre: events.classifications[0] / events.classifications.segment.name
 
 
 
@@ -42,12 +54,9 @@ export default function renderList(berlinEvents) {
 //  		});
 //  		document.getElementById("events").innerHTML = data1;
 
-
 //  	}).catch(error)
 
 // }
-
-
 
 
 // const eventsImage = document.querySelector('.events__img');
