@@ -3,7 +3,6 @@ import renderList from "./modules/renderList.js";
 import backToTop from "./modules/toTopButton.js";
 
 backToTop();
-// fetchEvents();
 renderList(await fetchEvents());
 
 
