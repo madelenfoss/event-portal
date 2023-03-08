@@ -29,6 +29,7 @@
 
 .events__info {
 	margin: 2rem;
+	text-align: center;
 }
 
 .events__date,
@@ -64,6 +65,11 @@
 	font-size: 1rem;
 	box-shadow: 6px 4px var(--quinary);
 	cursor: pointer;
+}
+
+.events__tickets a {
+	color: var(--quaternary);
+	text-decoration: none;
 }
 
 .events__tickets:hover {
