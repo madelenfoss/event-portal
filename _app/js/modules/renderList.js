@@ -1,26 +1,29 @@
 export default function renderList(berlinEvents) {
 
 	const berlinEventsElement = document.querySelector('.events');
-	berlinEvents.events.forEach(berlinEvent => {
-		const eventElement = document.createElement('.events__event');
+	console.log(berlinEvents)
+	berlinEvents.forEach(berlinEvent => {
+		const eventElement = document.createElement('div');
+		eventElement.classList.add('events__event');
 		eventElement.innerHTML = `
-  				<img class="events__img" src="${image}" alt="event image">
+  				<img class="events__img" src="${berlinEvent.image}" alt="event image">
   				<div class="events__info">
-  					<div class="events__date">${date}</div>
-  					<h3 class="events__name">${eventname}</h3>
-  					<div><span class="events__genre">${genre}</span>
+  					<div class="events__date">${berlinEvent.date}</div>
+  					<h3 class="events__name">${berlinEvent.eventname}</h3>
+  					<div><span class="events__genre">${berlinEvent.genre}</span>
 					<span> - </span>
-					<span class="events__venue">${venue}</span></div>
+					<span class="events__venue">${berlinEvent.venue}</span></div>
   				</div>
-  				<button class="events__tickets">${tickets}</button>
+  				<a target="_blank" href="${berlinEvent.tickets}"><button class="events__tickets">Tickets</button><a/>
 		`
-		berlinEventsElement.appendchild(eventElement);
+		berlinEventsElement.appendChild(eventElement);
 	})
 
 	 console.log(berlinEvents);
 } 
 
 
+// Lage en function?
 
 
 // <img class="events__img" src="${berlinEvents.events.image[0].url}" alt="event image">
@@ -43,7 +46,7 @@ export default function renderList(berlinEvents) {
 
 
 
-// Lage en function
+
 
 
 
