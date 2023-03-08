@@ -1,19 +1,29 @@
    export default async function fetchEvents() {
-   	const endpoint = 'https://app.ticketmaster.com/discovery/v2/events?apikey=3PgslbneI8EdQweGEK0RAM0Ii9iCL3Rj&locale=*&city=Berlin&countryCode=DE';
+		
+   	const endpoint = 'https://app.ticketmaster.com/discovery/v2/events?apikey=3PgslbneI8EdQweGEK0RAM0Ii9iCL3Rj&locale=*&size=200&city=Berlin&countryCode=DE';
    	const response = await fetch(endpoint); 
-  	const result = await response.json();
+  		const result = await response.json();
 
-  	console.log(result.data);
+		const allData = result._embedded.events.map(data => {
+			return {
+				image: data.image[0].url,
+				date: data.dates.start.localDate,
+				name: data.name,
+				genre: data.classifications[0].segment.name,
+				venue: data._embedded.venues[0].name,
+				tickets: data.url
+			}
+		})
+		console.log(allData);
+		console.log(result._embedded);
+  	// return result._embedded;
  } 
 
 
 
 
-// Name: events.name
-// Image: events.images[0] /
-// Genre: events.classifications[0] / events.classifications.segment.name
-// Venue: events.venues.name
-// Tickets: 
+
+
 
 
 
