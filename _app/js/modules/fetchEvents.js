@@ -6,7 +6,7 @@
 
 		const allEvents = result._embedded.events.map(event => {
 			return {
-				image: event.image[0].url,
+				image: event.images[0].url,
 				date: event.dates.start.localDate,
 				eventname: event.name,
 				genre: event.classifications[0].segment.name,
