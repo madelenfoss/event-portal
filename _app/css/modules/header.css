@@ -48,7 +48,7 @@ header {
 	display: flex;
 	list-style: none;
 	color: var(--quaternary);
-	width: 14rem;
+	width: 18rem;
 	justify-content: space-between;
 }
 
