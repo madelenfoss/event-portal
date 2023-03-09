@@ -42,13 +42,14 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 2rem 4rem;
+	font-size: large;
 }
 
 .navbar__menu {
 	display: flex;
 	list-style: none;
 	color: var(--quaternary);
-	width: 18rem;
+	width: 20rem;
 	justify-content: space-between;
 }
 
