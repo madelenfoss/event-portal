@@ -21,7 +21,8 @@
 }
 
 .events__img {
-	width: 33%;
+	width: 30%;
+	/* object-fit: cover; */
 	margin: 2rem 0;
 	border: 0.4rem solid var(--quaternary);
 	box-shadow: 4px 4px 8px var(--quinary);
