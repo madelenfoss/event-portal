@@ -21,7 +21,7 @@
 }
 
 .events__img {
-	width: 30%;
+	width: 33%;
 	margin: 2rem 0;
 	border: 0.4rem solid var(--quaternary);
 	box-shadow: 4px 4px 8px var(--quinary);
@@ -29,6 +29,7 @@
 }
 
 .events__info {
+	width: 33%;
 	margin: 2rem 4rem;
 	text-align: center;
 }
@@ -41,10 +42,6 @@
 	text-align: center;
 	justify-content: center;
 }
-
-/* .events__name {
-	overflow-wrap: break-word;
-} */
 
 .events__genre {
 	margin: 1rem auto;
@@ -61,8 +58,9 @@
 }
 
 .events__tickets {
+	width: 20%;
 	background-color: var(--secondary);
-	padding: 1.6vw 8vw;
+	padding: 1.6vw;
 	color: var(--quaternary);
 	margin: 1rem auto;
 	border-radius: 10rem;
@@ -70,11 +68,9 @@
 	font-size: 1rem;
 	box-shadow: 6px 4px var(--quinary);
 	cursor: pointer;
-}
-
-.events__tickets a {
-	color: var(--quaternary);
 	text-decoration: none;
+	justify-content: center;
+	text-align: center;
 }
 
 .events__tickets:hover {
@@ -100,7 +96,8 @@
 	}
 
 	.events__tickets {
-		padding: 0.8rem 1.8rem;
+		padding: 1rem;
+		width: 50%;
 	}
 
 	.events__lastline {
@@ -125,7 +122,7 @@
 	.events__event {
 		display: flex;
 		flex-direction: column;
-		margin: 0;
+		margin: 1rem auto;
 		padding: 0;
 	}
 
@@ -148,8 +145,8 @@
 	}
 
 	.events__tickets {
-		padding: 0.8rem 3rem;
+		padding: 1.5rem;
 		box-shadow: 4px 2px var(--quinary);
-		margin: 1rem auto 2rem auto;
+		margin: 1rem auto 3rem auto;
 	}
 }
