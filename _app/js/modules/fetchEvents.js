@@ -8,7 +8,7 @@
 			return {
 				image: event.images[0].url,
 				date: event.dates.start.localDate,
-				eventname: event.name,
+				eventName: event.name,
 				genre: event.classifications[0].segment.name,
 				venue: event._embedded.venues[0].name,
 				tickets: event.url
