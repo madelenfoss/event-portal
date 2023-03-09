@@ -24,6 +24,14 @@ export default function renderList(berlinEvents) {
 
 
 // Lage en function?
+		// const eventImage = berlinEvent.image;
+		// console.log(eventImage)
+
+		//  const imageElement = document.createElement('img');
+		//  imageElement.classList.add('events__img');
+		//  imageElement.setAttribute('src', eventImage.find(image=> image.width > 600)?.url);
+
+		// 	berlinEventsElement.appendChild(imageElement);
 
 
 // <img class="events__img" src="${berlinEvents.events.image[0].url}" alt="event image">
