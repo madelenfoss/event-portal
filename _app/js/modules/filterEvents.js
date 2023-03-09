@@ -50,13 +50,13 @@ export default function filterEvents() {
 			const filterItem = document.createElement('div');
 
 			filterItem.dataset.category = event.classifications[0].segment.name;
-			filterItem.className = 'events__genre';
+			filterItem.className = 'events__genre' && 'data-category';
 			filterItem.innerHTML = `
 			<img class="events__img" src="${berlinEvent.image}" alt="event image">
 			<div class="events__info">
 				<div class="events__date">${berlinEvent.date}</div>
 				<h3 class="events__name">${berlinEvent.eventname}</h3>
-				<div><span class="events__genre">${berlinEvent.genre}</span>
+				<div><span class="events__genre" data-category="${berlinEvent.genre}">${berlinEvent.genre}</span>
 			 <span> - </span>
 			 <span class="events__venue">${berlinEvent.venue}</span></div>
 			</div>
