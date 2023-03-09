@@ -25,10 +25,11 @@
 	margin: 2rem 0;
 	border: 0.4rem solid var(--quaternary);
 	box-shadow: 4px 4px 8px var(--quinary);
+	justify-content: left;
 }
 
 .events__info {
-	margin: 2rem;
+	margin: 2rem 4rem;
 	text-align: center;
 }
 
@@ -40,6 +41,10 @@
 	text-align: center;
 	justify-content: center;
 }
+
+/* .events__name {
+	overflow-wrap: break-word;
+} */
 
 .events__genre {
 	margin: 1rem auto;
@@ -59,7 +64,7 @@
 	background-color: var(--secondary);
 	padding: 1.6vw 8vw;
 	color: var(--quaternary);
-	margin: 1rem 0;
+	margin: 1rem auto;
 	border-radius: 10rem;
 	border: 1px solid var(--tertiary);
 	font-size: 1rem;
@@ -91,7 +96,7 @@
 	}
 
 	.events__info {
-		margin: 0.5rem auto;
+		margin: 0.5rem 2rem;
 	}
 
 	.events__tickets {
