@@ -85,8 +85,8 @@
 
 @media screen and (max-width: 768px) {
 	.events__img {
-		width: 9rem;
-		height: 7rem;
+		width: 11rem;
+		height: 8rem;
 		object-fit: cover;
 		border: 3px solid var(--quaternary);
 		margin: 0;
@@ -98,7 +98,7 @@
 
 	.events__tickets {
 		padding: 1rem;
-		width: 50%;
+		width: 30%;
 	}
 
 	.events__lastline {
@@ -128,15 +128,16 @@
 	}
 
 	.events__info {
-		margin: 0.5rem;
+		width: 90%;
+		margin: 1rem 2rem;
 	}
 
 	.events__img {
-		width: 60%;
-		max-width: 10rem;
+		width: 70%;
+		max-width: 14rem;
 		object-position: top;
 		box-shadow: 2px 2px 3px var(--quinary);
-		margin: 1rem auto;
+		margin: 1rem 2rem;
 	}
 	.events__date,
 	.events__name,
@@ -146,8 +147,11 @@
 	}
 
 	.events__tickets {
-		padding: 1.5rem;
+		width: 50%;
+		padding: 1.3rem;
 		box-shadow: 4px 2px var(--quinary);
 		margin: 1rem auto 3rem auto;
+		justify-content: center;
+
 	}
 }
