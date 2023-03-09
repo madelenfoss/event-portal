@@ -69,14 +69,21 @@ header {
 
 /* Mobile menu */
 
-.navbar__icons-mob {
+/* .navbar__icons-mob {
 	display: none;
 	justify-content: space-between;
 	width: 96vw;
 	margin: 0 auto;
-}
+} */
 
-.navbar__icons-mob-hamburger {
+/* .navbar__icons-mob-hamburger {
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin: 1rem;
+} */
+
+.navbar__links-mob-btn {
 	background: none;
 	border: none;
 	cursor: pointer;
@@ -107,7 +114,7 @@ header {
 }
 
 .navbar__links-mob-menu {
-	display: none
+	display: none;  /* finne ut av dette */
 }
 
 .navbar__links-mob-menu-item {
@@ -129,7 +136,7 @@ header {
 		display: block;
 	}
 
-	.navbar__icons-mob {
+	/* .navbar__icons-mob {
 		display: flex;
-	}
+	} */
 }
