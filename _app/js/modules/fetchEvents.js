@@ -18,8 +18,6 @@
 		console.log(allEvents);
 		return allEvents;
 	
-	// console.log(result._embedded);
-  	// return result._embedded;
  } 
 
 

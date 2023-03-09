@@ -7,6 +7,6 @@ import toggleMenu from "./modules/toggleMenu.js";
 backToTop();
 renderList(await fetchEvents());
 // filterEvents();
-toggleMenu();
+// toggleMenu();
 
 
