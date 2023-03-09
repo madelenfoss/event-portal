@@ -11,7 +11,7 @@ export default function renderList(berlinEvents) {
   					<div class="events__date">${berlinEvent.date}</div>
   					<h3 class="events__name">${berlinEvent.eventName}</h3>
 					<div class="events__genre">${berlinEvent.genre}</div>
-					<div class="events__venue">${berlinEvent.venue}</div>
+					<div class="events__venue">Venue: <strong>${berlinEvent.venue}</strong></div>
   				</div>
   				<a class="events__tickets" target="_blank" href="${berlinEvent.tickets}">
 				Tickets
