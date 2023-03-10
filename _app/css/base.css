@@ -5,3 +5,7 @@ body {
 	background-color: var(--primary);
 	font-family: 'Comfortaa', sans-serif;
 }
+html{
+
+	scroll-behavior: smooth;
+}
