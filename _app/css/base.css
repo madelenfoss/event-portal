@@ -3,7 +3,5 @@ body {
 	flex-direction: column;
 	position: relative;
 	background-color: var(--primary);
-	width: 100vw;
-	min-height: 100vh;
 	font-family: 'Comfortaa', sans-serif;
 }
