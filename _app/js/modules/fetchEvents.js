@@ -3,6 +3,9 @@
 		
    	const endpoint = `https://app.ticketmaster.com/discovery/v2/events?${apiToken}&locale=*&size=200&city=Berlin&countryCode=DE`;
    	const response = await fetch(endpoint); 
+
+		// try catch starts here
+
   		const result = await response.json();
 
 		const allEvents = result._embedded.events.map(event => {
@@ -15,6 +18,8 @@
 				tickets: event.url
 			}
 		})
+
+		// catch error goes here
 
 		console.log(allEvents);
 		return allEvents;
