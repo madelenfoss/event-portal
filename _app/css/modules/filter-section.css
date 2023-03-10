@@ -73,18 +73,17 @@
 
 .filter-buttons-mobile__labels {
 	justify-content: center;
-	border: 2px solid var(--secondary);
+	border: 1.5px solid var(--secondary);
 	border-top: none;
 	display: none;
 	
 }
 
 .filter-buttons-mobile__btn {
-	display: none; 
 	background-color: var(--primary);
 	padding: 1rem;
-	cursor: pointer;
 	width: 100%;
+	cursor: pointer;
 	border: 1px solid var(--primary);
 	font-size: 1rem;
 }
