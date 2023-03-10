@@ -1,7 +1,6 @@
 .events {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
 	margin: 1rem auto;
 	padding: 0.5rem;
 	background-color:var(--primary);
@@ -12,16 +11,18 @@
 .events__event {
 	display: flex;
 	flex-direction: row;
+
 	align-items: center;
 	margin: 0 auto;
 	padding: 1rem;
 	border-bottom: 1px solid var(--secondary);
 	justify-content: space-between;
-	width: 90%;
+	width: 92%;
 }
 
 .events__img {
-	width: 30%;
+	width: 35%;
+	min-width: 18rem;
 	/* object-fit: cover; */
 	margin: 2rem 0;
 	border: 0.4rem solid var(--quaternary);
@@ -30,8 +31,8 @@
 }
 
 .events__info {
-	width: 33%;
-	margin: 2rem 4rem;
+	width: 35%;
+	margin: 2rem 3rem;
 	text-align: center;
 }
 
@@ -84,37 +85,6 @@
 }
 
 @media screen and (max-width: 768px) {
-	.events__img {
-		width: 11rem;
-		height: 8rem;
-		object-fit: cover;
-		border: 3px solid var(--quaternary);
-		margin: 0;
-	}
-
-	.events__info {
-		margin: 0.5rem 2rem;
-	}
-
-	.events__tickets {
-		padding: 1rem;
-		width: 30%;
-	}
-
-	.events__lastline {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.events__genre,
-	.events__venue {
-		margin: 0.5rem auto;
-	}
-}
-
-@media screen and (max-width: 550px) {
 	.events {
 		margin: 0;
 		padding: 0;
@@ -133,8 +103,7 @@
 	}
 
 	.events__img {
-		width: 70%;
-		max-width: 14rem;
+		width: 85%;
 		object-position: top;
 		box-shadow: 2px 2px 3px var(--quinary);
 		margin: 1rem 2rem;
