@@ -1,28 +1,27 @@
-export default function toggleMenu(collapsibleContainerNode) {
-	let isCollapsed = true;
+export default function Navigation() {
+
+	let navigationVisible = false;
 
 
-const toggleButton = collapsibleContainerNode.querySelector('.navbar__links-mob-btn');
-const contentContainer = collapsibleContainerNode.querySelector('.navbar__links-mob-menu');
+const navigationMenu = document.querySelector('.navbar__menu');
+const navigationMenuIcon = document.querySelector('.navbar__menu-icon');
 
-if (collapsibleContainerNode !== null) {
-	toggleButton.addEventListener('click', handleToggleButtonClick)
-}
+navigationMenuIcon.addEventListener('click', handleNavigationMenuIconClick);
 
-function handleToggleButtonClick(event) {
-	toggleCollapsed();
+function handleNavigationMenuIconClick(event) {
+	toggleNavigation();
 	renderHTML();
 }
 
-function toggleCollapsed() {
-	isCollapsed = !isCollapsed;
+function toggleNavigation() {
+	navigationVisible = !navigationVisible;
 }
 
 function renderHTML() {
-	if (isCollapsed === true) {
-		contentContainer.classList.remove('.navbar__links-mob-menu--visible');
+	if ( navigationVisible === true) {
+		navigationMenu.classList.add('navbar__menu--visible');
 	} else {
-		contentContainer.classList.add('.navbar__links-mob-menu--visible')
+		navigationMenu.classList.remove('navbar__menu--visible');
 	}
  }
 

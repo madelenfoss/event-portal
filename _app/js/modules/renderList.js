@@ -9,8 +9,8 @@ export default function renderList(berlinEvents) {
   				<img class="events__img" src="${berlinEvent.image}" alt="event image">
   				<div class="events__info">
   					<div class="events__date">${berlinEvent.date}</div>
-  					<h3 class="events__name">${berlinEvent.eventName}</h3>
-					<div class="events__genre">${berlinEvent.genre}</div>
+  					<h2 class="events__name">${berlinEvent.eventName}</h2>
+					<div class="events__genre"><em>${berlinEvent.genre}</em></div>
 					<div class="events__venue">Venue: <strong>${berlinEvent.venue}</strong></div>
   				</div>
   				<a class="events__tickets" target="_blank" href="${berlinEvent.tickets}">
