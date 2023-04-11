@@ -35,13 +35,37 @@ header {
 	text-shadow: 0 1px var(--tertiary);
 }
 
+.navbar__items {
+	display: flex;
+	width: 90vw;
+	margin: 0 1rem;
+	align-items: center;
+}
+
 .navbar__links {
 	display: flex;
 	margin: 0 auto;
 	width: 100vw;
 	align-items: center;
-	padding: 2rem 4rem;
+	padding: 2rem 0;
 	font-size: large;
+}
+
+ /* .navbar__search-wrapper {
+	margin: 0 auto;
+	padding: 0;
+} */
+
+.navbar__search-container {
+	display: flex;
+}
+
+#search-input {
+	margin: 0 auto;
+	padding: 0.6rem 3rem;
+	border-radius: 2rem;
+	text-align: left;
+	border: none;
 }
 
 .navbar__menu {
