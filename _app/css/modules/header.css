@@ -35,6 +35,10 @@ header {
 	text-shadow: 0 1px var(--tertiary);
 }
 
+.navbar__seach-icon {
+	display: none;
+}
+
 .navbar__items {
 	display: flex;
 	width: 90vw;
@@ -52,7 +56,9 @@ header {
 }
 
 .navbar__search-container {
+	position: relative;
 	display: flex;
+	align-items: center;
 }
 
 #search-input {
@@ -61,6 +67,12 @@ header {
 	border-radius: 2rem;
 	text-align: left;
 	border: none;
+}
+
+.navbar__search-icon {
+	position: absolute;
+	right: 0.4rem;
+	padding: 0.2rem;
 }
 
 .navbar__menu {
@@ -86,6 +98,26 @@ header {
 
 	.navbar__menu {
 		display: none;
+	}
+
+	.navbar__icons {
+		display: flex;
+		margin: 0 auto;
+		align-items: center;
+		width: 90vw;
+		justify-content: space-between;
+	}
+
+	.navbar__seach-icon {
+		display: block;
+	}
+
+	.navbar__search-wrapper {
+		display: none;
+	}
+
+	.navbar__seach-icon img {
+		width: 3.1rem;
 	}
 	
 	.navbar__menu--visible {
