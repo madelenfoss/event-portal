@@ -51,11 +51,6 @@ header {
 	font-size: large;
 }
 
- /* .navbar__search-wrapper {
-	margin: 0 auto;
-	padding: 0;
-} */
-
 .navbar__search-container {
 	display: flex;
 }
