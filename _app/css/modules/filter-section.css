@@ -47,20 +47,15 @@
 	box-shadow: 1px 1px var(--secondary);
 }
 
-.filter-buttons-mobile {
-	position: sticky;
-	z-index: 50;
-	margin: 0 auto;
-	justify-content: center;
-	align-items: center;
-	top: 0;
-}
 
 .filter-buttons-mobile__sort {
 	display: none;
-	margin: 0 auto;
+	position: sticky;
+	z-index: 50;
+	top: 0.6rem;
+	margin: 1rem auto;
 	padding: 1rem;
-	width: 100%;
+	width: 90%;
 	cursor: pointer;
 	border: 1.5px solid var(--secondary);
 	background-color: var(--primary);
@@ -69,23 +64,6 @@
 
 .filter-buttons-mobile__sort:active {
 	background-color: var(--senary);
-}
-
-.filter-buttons-mobile__labels {
-	justify-content: center;
-	border: 1.5px solid var(--secondary);
-	border-top: none;
-	display: none;
-	
-}
-
-.filter-buttons-mobile__btn {
-	background-color: var(--primary);
-	padding: 1rem;
-	width: 100%;
-	cursor: pointer;
-	border: 1px solid var(--primary);
-	font-size: 1rem;
 }
 
 .filter-buttons-mobile__btn:not(:last-of-type) {
@@ -101,20 +79,9 @@
 		display: none;
 	}
 
-	.filter-buttons-mobile__sort,
-	.filter-buttons-mobile__btn {
+	.filter-buttons-mobile__sort {
 		display: block;
-	}
-
-	.filter-buttons-mobile__labels--visible { 
-		display: block;
-	}
-	
-
-	.filter-buttons-mobile {
-		display: block;
-		margin: 1rem;
-		padding: 0.5rem 1rem;
-		text-align: center;
+		position: sticky;
+		
 	}
 }

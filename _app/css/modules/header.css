@@ -88,7 +88,7 @@ header {
 
 	.navbar__links {
 		display: flex;
-		width: 100%;
+		width: 97%;
 		padding: 0;
 		font-size: large;
 	}
@@ -103,10 +103,10 @@ header {
 	.navbar__menu-icon-top,
 	.navbar__menu-icon-mid,
 	.navbar__menu-icon-bottom {
-		width: 2.4rem;
+		width: 3.2rem;
 		height: 0.2rem;
 		background-color: var(--quaternary);
-		margin: 0.4rem;
+		margin: 0.6rem;
 		border-radius: 1rem;
 	}
 
