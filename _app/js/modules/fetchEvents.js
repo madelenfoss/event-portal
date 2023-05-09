@@ -8,16 +8,16 @@
 
   		const result = await response.json();
 
-		const allEvents = result._embedded.events.map(event => {
+		const allEvents = result._embedded.events.map((event) => {
 			return {
-				image: event.images.find(image=> image.width > 600)?.url,
+				image: event.images.find((image)=> image.width > 600)?.url,
 				date: event.dates.start.localDate,
 				eventName: event.name,
 				genre: event.classifications[0].segment.name,
 				venue: event._embedded.venues[0].name,
 				tickets: event.url
-			}
-		})
+			};
+		});
 
 		// catch error goes here
 
