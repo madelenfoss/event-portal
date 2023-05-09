@@ -2,6 +2,7 @@ export default function renderList(berlinEvents) {
 
 	const berlinEventsElement = document.querySelector('.events');
 	console.log(berlinEvents)
+	
 	berlinEvents.forEach(berlinEvent => {
 		const eventElement = document.createElement('div');
 		eventElement.classList.add('events__event');

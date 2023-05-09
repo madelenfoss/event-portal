@@ -1,20 +1,21 @@
 import fetchEvents from "./fetchEvents.js";
 
-export default function filterEvents() {
+export default function filterEvents(berlinEvents) {
 	let currentFilter = null;
 
-	const filterData = fetchEvents();
+	// const filterData = fetchEvents(berlinEvents);
 	const filterContent = document.querySelector('.events__event');
-	const filterToggles = document.querySelector('.filter-buttons__btn');
+	const filterToggles = document.querySelectorAll('.filter-buttons__btn');
 
 	for (const toggle of filterToggles) {
-		toggle.addEventlistener('click', handleFilterToggleClick);
+		toggle.addEventListener('click', handleFilterToggleClick);
 
 	}
 
-	function handleFilterToggleClick(event) {
+	async function handleFilterToggleClick(event) {
+		const allEvents = await fetchEvents();
 		toggleFilter(event.target.dataset.filter);
-		renderHTML();
+		renderHTML(allEvents);
 	}
 
 	function toggleFilter(filter) {
@@ -25,18 +26,19 @@ export default function filterEvents() {
 		}
 	}
 
-	function returnFilteredItems() {
+	function returnFilteredItems(events) {
 		if (currentFilter === null) {
-			return filterData;
+			return events;
 		} else {
-			return filterData.filter(event => event.classifications[0].segment.name === currentFilter);
+			return events.filter(event => event.genre === currentFilter);
 		}
 	}
 
-	renderHTML();
 
-	function renderHTML() {
-		filterContent.innerHTML = '';
+	// renderHTML();
+
+	async function renderHTML(events) {
+		filterContent.innerText = '';
 
 		for (const toggle of filterToggles) {
 			toggle.classList.remove('filter-buttons__btn--active');
@@ -46,21 +48,23 @@ export default function filterEvents() {
 			}
 		}
 
-		for (const event of returnFilteredItems()) {
+		for (const event of returnFilteredItems(events)) {
 			const filterItem = document.createElement('div');
 
-			filterItem.dataset.category = event.classifications[0].segment.name;
+			filterItem.dataset.category = event.genre;
 			filterItem.className = 'events__genre' && 'data-category';
+
+			// The wrong way to render data and append to DOM
 			filterItem.innerHTML = `
-			<img class="events__img" src="${berlinEvent.image}" alt="event image">
+			<img class="events__img" src="${berlinEvents.image}" alt="event image">
 			<div class="events__info">
-				<div class="events__date">${berlinEvent.date}</div>
-				<h3 class="events__name">${berlinEvent.eventname}</h3>
-				<div><span class="events__genre" data-category="${berlinEvent.genre}">${berlinEvent.genre}</span>
+				<div class="events__date">${berlinEvents.date}</div>
+				<h3 class="events__name">${berlinEvents.eventname}</h3>
+				<div><span class="events__genre" data-category="${berlinEvents.genre}">${berlinEvents.genre}</span>
 			 <span> - </span>
-			 <span class="events__venue">${berlinEvent.venue}</span></div>
+			 <span class="events__venue">${berlinEvents.venue}</span></div>
 			</div>
-			<a target="_blank" href="${berlinEvent.tickets}"><button class="events__tickets">Tickets</button><a/>
+			<a target="_blank" href="${berlinEvents.tickets}"><button class="events__tickets">Tickets</button><a/>
  `
 		}
 	}
