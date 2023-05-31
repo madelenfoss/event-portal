@@ -54,7 +54,8 @@ export default function filterEvents(berlinEvents) {
 			filterItem.dataset.category = event.genre;
 			filterItem.className = 'events__genre' && 'data-category';
 
-			// The wrong way to render data and append to DOM
+			// The wrong way to render data and append to DOM, I'm sorry
+			// and will fix this later 
 			filterItem.innerHTML = `
 			<img class="events__img" src="${berlinEvents.image}" alt="event image">
 			<div class="events__info">
