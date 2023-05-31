@@ -2,10 +2,13 @@ export default function renderList(berlinEvents) {
 
 	const berlinEventsElement = document.querySelector('.events');
 	console.log(berlinEvents)
-	
+
+
 	berlinEvents.forEach(berlinEvent => {
 		const eventElement = document.createElement('div');
 		eventElement.classList.add('events__event');
+		// The wrong way to render data and append to DOM, 
+		// I'm sorry - will fix this later 
 		eventElement.innerHTML = `
   				<img class="events__img" src="${berlinEvent.image}" alt="event image">
   				<div class="events__info">

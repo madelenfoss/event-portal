@@ -1,5 +1,8 @@
 import fetchEvents from "./fetchEvents.js";
 
+// Testing filtering by following Kristiania teacher Alejandro Rojas'
+// tutorial
+
 export default function filterEvents(berlinEvents) {
 	let currentFilter = null;
 
