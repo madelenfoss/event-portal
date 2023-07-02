@@ -39,9 +39,5 @@ https://icons8.com/
 Scroll to top button:
 https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
 
-## Access:
-http://localhost:5500
-http://localhost:3000
-
 ## What to do next:
 - Create genre filters for events
