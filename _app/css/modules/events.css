@@ -11,7 +11,6 @@
 .events__event {
 	display: flex;
 	flex-direction: row;
-
 	align-items: center;
 	margin: 0 auto;
 	padding: 1rem;
@@ -23,7 +22,6 @@
 .events__img {
 	width: 35%;
 	min-width: 18rem;
-	/* object-fit: cover; */
 	margin: 2rem 0;
 	border: 0.4rem solid var(--quaternary);
 	box-shadow: 4px 4px 8px var(--quinary);
