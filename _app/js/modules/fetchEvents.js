@@ -1,7 +1,7 @@
-   import { apiToken } from "../env.js";
+   import { ticketmasterApiKey } from "../env.js";
 	export default async function fetchEvents() {
 		
-   	const endpoint = `https://app.ticketmaster.com/discovery/v2/events?${apiToken}&locale=*&size=200&city=Berlin&countryCode=DE`;
+   	const endpoint = `https://app.ticketmaster.com/discovery/v2/events?${ticketmasterApiKey}&locale=*&size=200&city=Berlin&countryCode=DE`;
    	const response = await fetch(endpoint); 
 
 		// try catch starts here
