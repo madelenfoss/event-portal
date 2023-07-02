@@ -15,6 +15,7 @@ export default function renderList(berlinEvents) {
 		const dateElement = document.createElement('div');
 		const nameElement = document.createElement('h2');
 		const genreElement = document.createElement('div');
+		const genreElementsItalics = document.createElement('em');
 		const venueElement = document.createElement('div');
 		const ticketElement = document.createElement('a');
 
@@ -30,14 +31,17 @@ export default function renderList(berlinEvents) {
 		imageElement.setAttribute('src', berlinEvent.image);
 		imageElement.setAttribute('alt', 'event image');
 		ticketElement.setAttribute('href', berlinEvent.tickets);
+		ticketElement.setAttribute('target', '_blank');
 
 		dateElement.innerText = `${berlinEvent.date}`;
 		nameElement.innerText = `${berlinEvent.eventName}`;
-		genreElement.innerText = `${berlinEvent.genre}`;
+		genreElementsItalics.innerText = `${berlinEvent.genre}`;
 		venueElement.innerText = `${berlinEvent.venue}`;
 		ticketElement.innerText = 'Tickets';
 
 		berlinEventsElement.appendChild(eventElement);
+
+		genreElement.appendChild(genreElementsItalics);
 
 		infoElement.append(
 			dateElement,
