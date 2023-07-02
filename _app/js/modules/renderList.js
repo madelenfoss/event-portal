@@ -2,8 +2,22 @@ export default function renderList(berlinEvents) {
 
 	const berlinEventsElement = document.querySelector('.events');
 
+	if (berlinEventsElement) {
 	berlinEvents.forEach(berlinEvent => {
+			renderHTML(berlinEvent)
+		});
+	}
+
+	function renderHTML(berlinEvent) {
 		const eventElement = document.createElement('div');
+		const imageElement = document.createElement('img');
+		const infoElement = document.createElement('div');
+		const dateElement = document.createElement('div');
+		const nameElement = document.createElement('h2');
+		const genreElement = document.createElement('div');
+		const venueElement = document.createElement('div');
+		const ticketElement = document.createElement('a');
+
 		eventElement.classList.add('events__event');
 		// The wrong way to render data and append to DOM, 
 		// I'm sorry - will fix this later 
