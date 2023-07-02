@@ -20,6 +20,8 @@ https://github.com/madelenfoss/event-portal
 https://github.com/users/madelenfoss/projects/2
 
 **Netlify:**
+https://berlinfo.netlify.app/
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/dccad194-bd31-422a-acb9-a5ceed62610d/deploy-status)](https://app.netlify.com/sites/berlinfo/deploys)
 
 ## Technologies used:
