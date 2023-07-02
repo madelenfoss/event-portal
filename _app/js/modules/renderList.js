@@ -19,6 +19,17 @@ export default function renderList(berlinEvents) {
 		const ticketElement = document.createElement('a');
 
 		eventElement.classList.add('events__event');
+		imageElement.classList.add('events__img');
+		infoElement.classList.add('events__info');
+		dateElement.classList.add('events__date');
+		nameElement.classList.add('events__name');
+		genreElement.classList.add('events__genre'); //italics
+		venueElement.classList.add('events__venue'); // bold
+		ticketElement.classList.add('events__tickets');
+
+		// setAttribute goes here:
+	}
+
 		// The wrong way to render data and append to DOM, 
 		// I'm sorry - will fix this later 
 		eventElement.innerHTML = `
