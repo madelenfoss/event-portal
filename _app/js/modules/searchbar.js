@@ -1,1 +1,0 @@
-// Lage border-bottom - transform scale i mobilversjon
