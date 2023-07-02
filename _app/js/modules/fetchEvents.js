@@ -21,9 +21,7 @@
 
 		// catch error goes here
 
-		console.log(allEvents);
-		return allEvents;
-	
+		return allEvents;	
  } 
 
 
