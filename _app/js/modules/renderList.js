@@ -3,7 +3,7 @@ export default function renderList(berlinEvents) {
 	const berlinEventsElement = document.querySelector('.events');
 
 	if (berlinEventsElement) {
-	berlinEvents.forEach(berlinEvent => {
+		berlinEvents.forEach(berlinEvent => {
 			renderHTML(berlinEvent)
 		});
 	}
@@ -32,19 +32,19 @@ export default function renderList(berlinEvents) {
 
 		// The wrong way to render data and append to DOM, 
 		// I'm sorry - will fix this later 
-		eventElement.innerHTML = `
-  				<img class="events__img" src="${berlinEvent.image}" alt="event image">
-  				<div class="events__info">
-  					<div class="events__date">${berlinEvent.date}</div>
-  					<h2 class="events__name">${berlinEvent.eventName}</h2>
-					<div class="events__genre"><em>${berlinEvent.genre}</em></div>
-					<div class="events__venue">Venue: <strong>${berlinEvent.venue}</strong></div>
-  				</div>
-  				<a class="events__tickets" target="_blank" href="${berlinEvent.tickets}">
-				Tickets
-				<a/>
-		`
-		berlinEventsElement.appendChild(eventElement);
+		// eventElement.innerHTML = `
+  		// 		<img class="events__img" src="${berlinEvent.image}" alt="event image">
+  		// 		<div class="events__info">
+  		// 			<div class="events__date">${berlinEvent.date}</div>
+  		// 			<h2 class="events__name">${berlinEvent.eventName}</h2>
+		// 			<div class="events__genre"><em>${berlinEvent.genre}</em></div>
+		// 			<div class="events__venue">Venue: <strong>${berlinEvent.venue}</strong></div>
+  		// 		</div>
+  		// 		<a class="events__tickets" target="_blank" href="${berlinEvent.tickets}">
+		// 		Tickets
+		// 		<a/>
+		// `
+		// berlinEventsElement.appendChild(eventElement);
 
 
 		// const eventImage = berlinEvent.image;
