@@ -3,11 +3,19 @@
 	padding: 5rem;
 	width: 80%;
 	text-align: center;
-	border: 1px solid var(--secondary);
-	
+	border: 1px solid var(--secondary);	
 }
 
 .contact__title {
+	margin: 1rem auto;
+}
+
+.contact__container {
+	border: 1px solid var(--secondary);
+	border-radius: 1rem;
+}
+
+.contact__form-title {
 	margin: 1rem auto;
 }
 
