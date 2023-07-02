@@ -40,3 +40,6 @@ https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-h
 ## Access:
 http://localhost:5500
 http://localhost:3000
+
+## What to do next:
+- Create genre filters for events
