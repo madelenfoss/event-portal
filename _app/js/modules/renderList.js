@@ -27,7 +27,31 @@ export default function renderList(berlinEvents) {
 		venueElement.classList.add('events__venue'); // bold
 		ticketElement.classList.add('events__tickets');
 
-		// setAttribute goes here:
+		imageElement.setAttribute('src', berlinEvent.image);
+		imageElement.setAttribute('alt', 'event image');
+		ticketElement.setAttribute('href', berlinEvent.tickets);
+
+		dateElement.innerText = `${berlinEvent.date}`;
+		nameElement.innerText = `${berlinEvent.eventName}`;
+		genreElement.innerText = `${berlinEvent.genre}`;
+		venueElement.innerText = `${berlinEvent.venue}`;
+		ticketElement.innerText = 'Tickets';
+
+		berlinEventsElement.appendChild(eventElement);
+
+		infoElement.append(
+			dateElement,
+			nameElement,
+			genreElement,
+			venueElement
+		)
+
+		eventElement.append(
+			imageElement,
+			infoElement,
+			ticketElement
+		)
+		
 	}
 
 		// The wrong way to render data and append to DOM, 
@@ -85,7 +109,6 @@ export default function renderList(berlinEvents) {
 		// infoElement.append(eventDate, eventName, eventGenre, eventVenue);
 		// berlinEventsElement.appendChild(eventTicket);
 
-	})
 } 
 
 
