@@ -1,8 +1,6 @@
 export default function renderList(berlinEvents) {
 
 	const berlinEventsElement = document.querySelector('.events');
-	console.log(berlinEvents)
-
 
 	berlinEvents.forEach(berlinEvent => {
 		const eventElement = document.createElement('div');
@@ -63,8 +61,6 @@ export default function renderList(berlinEvents) {
 		// berlinEventsElement.appendChild(eventTicket);
 
 	})
-
-	 console.log(berlinEvents);
 } 
 
 
