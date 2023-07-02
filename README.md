@@ -40,4 +40,5 @@ Scroll to top button:
 https://www.freecodecamp.org/news/back-to-top-button-and-page-progressbar-with-html-css-and-js/
 
 ## What to do next:
+- Make sure Netlify has access to ticketmaster data - API
 - Create genre filters for events
