@@ -19,6 +19,21 @@
 	border-radius: 1rem;
 }
 
-.contact__form-title {
+.contact__form-title,
+.contact__form-name,
+.contact__form-email,
+.contact__form-text,
+.contact__form-submit {
 	margin: 1rem auto;
 }
+
+.contact__form-text input {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 40vw;
+	height: 40vh;
+}
+
+
+
