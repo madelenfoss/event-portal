@@ -22,9 +22,22 @@
 .contact__form-title,
 .contact__form-name,
 .contact__form-email,
-.contact__form-text,
 .contact__form-submit {
 	margin: 1rem auto;
+}
+
+.contact__form-name input,
+.contact__form-email input {
+	width: 20vw;
+	height: 2rem;
+}
+
+.contact__form-text {
+	margin: 2rem auto;
+}
+
+.contact__form-text-label {
+	font-size: 1.2rem;
 }
 
 .contact__form-text input {
@@ -33,6 +46,17 @@
 	margin: auto;
 	width: 40vw;
 	height: 40vh;
+	border-radius: 1rem;
+}
+
+.contact__form-submit {
+	background: var(--secondary);
+	width: 8rem;
+	height: 3rem;
+	border: none;
+	border-radius: 10rem;
+	font-size: 1rem;
+	color: var(--quaternary);
 }
 
 
