@@ -48,7 +48,7 @@
 	border-radius: 1rem;
 }
 
-.contact__form-submit {
+.contact__form-submit input {
 	background: var(--secondary);
 	margin-bottom: 2rem;
 	width: 8rem;
