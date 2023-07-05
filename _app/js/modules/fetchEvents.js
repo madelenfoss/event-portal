@@ -3,6 +3,7 @@
 		
    	const endpoint = `https://app.ticketmaster.com/discovery/v2/events?${apiToken}&locale=*&size=200&city=Berlin&countryCode=DE`;
    	const response = await fetch(endpoint); 
+		//test
 
 		// try catch starts here
 
